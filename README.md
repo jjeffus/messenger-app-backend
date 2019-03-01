@@ -19,9 +19,6 @@ Mesibo Messenger is an open-source app with real-time messaging, voice and video
 
 [https://github.com/mesibo/messenger-app-ios/](https://github.com/mesibo/messenger-app-ios/).
 
-### Build Instructions & Running the App
-Read this [Tutorial]({{ "/documentation/tutorials/open-source-whatsapp-clone/" | relative_url }}) to known more about compiling the code, customization and other internals.
-
 ### Contributing
 Contributing to the Mesibo source code can be a rewarding experience. When you
 offer feedback, questions, edits, or new content, you help us, the projects you
