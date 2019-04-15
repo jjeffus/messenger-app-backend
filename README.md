@@ -1,4 +1,4 @@
-This repository will contain the backend source code for the Mesibo Messenger - scheduled to be released on March 10th, 2019.
+This repository contains the backend source code for the Mesibo Messenger.
 
 Mesibo Messenger is an open-source app with real-time messaging, voice and video call features. We have released the entire source code of Mesibo Android and iOS Apps on GitHub, where it can be continuously updated. You can download entire source code, and customize it to suit your needs. 
 
