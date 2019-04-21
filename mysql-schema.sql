@@ -2,7 +2,6 @@
 -- Table structure for table `contacts`
 --
 
-DROP TABLE IF EXISTS `contacts`;
 CREATE TABLE `contacts` (
   `uid` int(10) unsigned NOT NULL DEFAULT '0',
   `phone` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -14,7 +13,6 @@ CREATE TABLE `contacts` (
 -- Table structure for table `groups`
 --
 
-DROP TABLE IF EXISTS `groups`;
 CREATE TABLE `groups` (
   `gid` int(10) unsigned NOT NULL DEFAULT '0',
   `name` blob,
@@ -31,7 +29,6 @@ CREATE TABLE `groups` (
 -- Table structure for table `members`
 --
 
-DROP TABLE IF EXISTS `members`;
 CREATE TABLE `members` (
   `gid` int(10) unsigned NOT NULL DEFAULT '0',
   `phone` bigint(20) unsigned NOT NULL DEFAULT '0',
@@ -44,7 +41,6 @@ CREATE TABLE `members` (
 -- Table structure for table `names`
 --
 
-DROP TABLE IF EXISTS `names`;
 CREATE TABLE `names` (
   `name` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT '',
   `status` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT ''
@@ -54,7 +50,6 @@ CREATE TABLE `names` (
 -- Table structure for table `notifytokens`
 --
 
-DROP TABLE IF EXISTS `notifytokens`;
 CREATE TABLE `notifytokens` (
   `uid` int(10) unsigned NOT NULL DEFAULT '0',
   `device` tinyint(3) unsigned DEFAULT '0',
@@ -67,7 +62,6 @@ CREATE TABLE `notifytokens` (
 -- Table structure for table `tokens`
 --
 
-DROP TABLE IF EXISTS `tokens`;
 CREATE TABLE `tokens` (
   `uid` int(10) unsigned DEFAULT NULL,
   `token` char(64) NOT NULL DEFAULT '0',
@@ -85,7 +79,6 @@ CREATE TABLE `tokens` (
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `uid` int(10) unsigned NOT NULL DEFAULT '0',
   `name` blob,
