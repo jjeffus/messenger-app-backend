@@ -69,10 +69,6 @@ if ($err) {
 $host = $_SERVER['HTTP_HOST'];
 $mesibobaseurl  = "https://api.mesibo.com/api.php?";
 
-if(!strstr($host, "mesibo.com")) {
-	$mesibobaseurl  = "http://127.0.0.1/mesibo/api.php?";
-}
-
 /********************************************************************************
 Descripton: Performs the requested API operation 
                                                  
