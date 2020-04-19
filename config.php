@@ -47,26 +47,29 @@
 
 
 $external_config = "../config.php";
-$db_host = "db host";
-$db_name = "db name";         // the name of the database to connect to
-$db_user = "db user";         // the username to connect with
-$db_pass = "db password";     // the user's password
+
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$db_host = $url["host"];
+$db_user = $url["user"];
+$db_pass = $url["pass"];
+$db_name = substr($url["path"],1);
 
 //Account kit appid and secret
-$ak_appid = 'AccountKit App ID';
-$ak_secret = 'AccountKit Secret';
+$ak_appid = getenv("ACCOUNTKIT_APPID");
+$ak_secret = getenv("ACCOUNTKIT_SECRET");
 $ak_version = 'v1.0'; 
 
 // Apple APN Push notification
-$apn_passphrase = 'password';
-$apn_pem = '/var/www/html/data/apple_cert/voip.pem';
+$apn_passphrase = getenv("APN_PASSPHRASE");
+$apn_pem = 'apple_cert/voip.pem';
 
-$gcm_key = "Android GCM key";
-$google_map_key = "Google Map Key";
+$gcm_key = getenv("ANDROID_GCM_KEY");
+$google_map_key = getenv("GOOGLE_MAP_KEY");
 
 // API KEYS ARE OBTAINED BY SIGNING AT mesibo.com
-$mesibo_apikey = '';
-$mesibo_apptoken = '';
+$mesibo_apikey = getenv("MESIBO_API_KEY");
+$mesibo_apptoken = getenv("MESIBO_APP_TOKEN");
 
 $downloadurl = 'https://appimages.mesibo.com/';
 $files_path = '/files/mesibo.com/app';
