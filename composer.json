@@ -1,0 +1,15 @@
+{
+    "name": "janetjeffus/server",
+    "description": "INTERPLAST Mesibo Server",
+    "type": "project",
+    "require": {
+        "ext-mysqli": "^7.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Janet Jeffus",
+            "email": "speak@jjeff.us"
+        }
+    ]
+}
